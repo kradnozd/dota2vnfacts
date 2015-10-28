@@ -1,0 +1,16 @@
+<div class="row">
+    <div ng-show="fexist" class="col-md-8 col-md-offset-2 fact-content">
+        <p class="fact-text">{{ fact.text }}</p>
+        <footer class="fact-src">{{ fact.source }}</footer>
+        <div class="alert alert-info" role="alert">{{ fact.note }}</div>
+        <p class="fact-images" ng-repeat="photo in fact.images">
+            <img src="{{ photo }}"></img>
+        </p>
+        <p class="fact-vid embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="{{ fact.video }}"></iframe>
+        </p>
+    </div>
+    <div ng-hide="fexist" class="col-md-8 col-md-offset-2 fact-404">
+        <p>Deo co FACT</p>
+    </div>
+</div>
