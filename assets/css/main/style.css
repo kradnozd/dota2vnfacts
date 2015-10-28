@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/* Colors */
+/* Fonts */
+/* Global */
+body {
+  background: url(../../images/background_stone.jpg) center 0 repeat-y #151515;
+  color: #888; }
+
+/* Navbar */
+.navbar-inverse {
+  background-color: rgba(0, 0, 0, 0.3) !important; }
+
+.navbar-brand {
+  background: url(../../images/facts_logo.png) 20px 50% no-repeat transparent;
+  background-size: 120px;
+  text-indent: -9999px;
+  width: 150px; }
+
+.btn-random {
+  background-color: #673b06;
+  color: #ffffff !important;
+  font-weight: bold;
+  padding-top: 15px !important;
+  padding-bottom: 12px !important;
+  border-bottom: 3px solid #f2992e; }
+
+.btn-random:hover {
+  background-color: #000000 !important;
+  color: #f2992e !important; }
+
+/* Contents */
+.fact-title {
+  font-size: 150%;
+  margin: 5rem 0;
+  color: #f2992e; }
+
+.fact-text {
+  font-family: Georgia, Times, serif;
+  font-size: 250%; }
+
+.fact-text:before, .fact-text:after {
+  font-size: 500%;
+  position: absolute;
+  line-height: 1;
+  color: #f2992e; }
+
+.fact-text:before {
+  content: '“';
+  left: -80px; }
+
+.fact-text:after {
+  content: '”';
+  right: -80px; }
+
+.fact-src:before {
+  content: '\2014 \00A0'; }
+
+.fact-src {
+  font-family: Georgia, Times, serif;
+  font-size: 150%;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: right; }
+
+.fact-images img {
+  max-width: 100%; }
+
+/*# sourceMappingURL=style.css.map */

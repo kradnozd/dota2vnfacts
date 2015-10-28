@@ -1,0 +1,83 @@
+/* Colors */
+$main-color: #f2992e;
+$main-color-darker: darken($main-color, 35);
+$bg-color: #151515;
+$white: #ffffff;
+$black: #000000;
+$black-transparent: rgba(0, 0, 0, 0.3);
+$text-color: #888;
+$text-color-darker: #666;
+
+/* Fonts */
+$serif-family: Georgia, Times, serif;
+
+/* Global */
+body {
+    background: url(../../images/background_stone.jpg) center 0 repeat-y $bg-color;
+    color: $text-color;
+}
+
+/* Navbar */
+.navbar-inverse {
+    background-color: $black-transparent !important;
+}
+.navbar-brand {
+    background: url(../../images/facts_logo.png) 20px 50% no-repeat transparent;
+    background-size: 120px;
+    text-indent: -9999px;
+    width: 150px;
+}
+.btn-random {
+    background-color: $main-color-darker;
+    color: $white !important;
+    font-weight: bold;
+    padding-top: 15px !important;
+    padding-bottom: 12px !important;
+    border-bottom: 3px solid $main-color;
+}
+.btn-random:hover {
+    background-color: $black !important;
+    color: $main-color !important;
+}
+
+/* Contents */
+.fact-title {
+    font-size: 150%;
+    margin: 5rem 0;
+    color: $main-color;
+}
+
+.fact-text {
+    font-family: $serif-family;
+    font-size: 250%;
+}
+.fact-text:before, .fact-text:after {
+    font-size: 500%;
+    position: absolute;
+    line-height: 1;
+    color: $main-color;
+}
+.fact-text:before {
+    content: '“';
+    left: -80px;
+}
+.fact-text:after {
+    content: '”';
+    right: -80px;
+}
+
+.fact-src:before {
+    content: '\2014 \00A0';
+}
+.fact-src {
+    font-family: $serif-family;
+    font-size: 150%;
+    font-style: italic;
+    color: $text-color-darker;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.fact-images img {
+    max-width: 100%;
+}

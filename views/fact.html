@@ -1,5 +1,6 @@
 <div class="row">
     <div ng-show="fexist" class="col-md-8 col-md-offset-2 fact-content">
+        <h1 class="fact-title">Fact #{{ fact.id }}</h1>
         <p class="fact-text">{{ fact.text }}</p>
         <footer class="fact-src">{{ fact.source }}</footer>
         <div class="alert alert-info" role="alert">{{ fact.note }}</div>
