@@ -1,14 +1,33 @@
+'use strict';
+
 var factApp = angular.module('d2vnFact', ['ngRoute']);
 
-factApp.config(function($routeProvider) {
+factApp.config(function($routeProvider, $locationProvider) {
   $routeProvider
     .when('/', {
+            redirectTo: '/home'
+    })
+    .when('/home', {
                 templateUrl : 'views/home.html',
-                controller  : 'mainController'
+                controller  : 'HomeFact'
     })
     .when('/f/:factId', {
                 templateUrl : 'views/fact.html',
                 controller  : 'GetFact'
+    })
+    .when('/submit', {
+                templateUrl : 'views/submit.html',
+                controller  : 'NoController'
+    })
+    .otherwise({
+            redirectTo: '/home'
+    });
+    // $locationProvider.html5Mode(true);
+});
+
+factApp.controller('HomeFact', function($scope, LoadFact) {
+    LoadFact.GetData().success(function(data) {
+      $scope.facts = data.facts;
     });
 });
 

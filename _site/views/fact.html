@@ -2,16 +2,19 @@
     <div ng-show="fexist" class="col-md-8 col-md-offset-2 fact-content">
         <h1 class="fact-title">Fact #{{ fact.id }}</h1>
         <p class="fact-text">{{ fact.text }}</p>
-        <footer class="fact-src">{{ fact.source }}</footer>
-        <div class="alert alert-info" role="alert">{{ fact.note }}</div>
-        <p class="fact-images" ng-repeat="photo in fact.images">
+        <footer class="fact-src" ng-show="fact.source != null">{{ fact.source }}</footer>
+        <div class="fact-note" ng-show="fact.note != null">
+            <h4><i class="fa fa-sticky-note"></i> Note</h4>
+            <p>{{ fact.note }}</p>
+        </div>
+        <p class="fact-images" ng-show="fact.images != null" ng-repeat="photo in fact.images">
             <img src="{{ photo }}"></img>
         </p>
-        <p class="fact-vid embed-responsive embed-responsive-16by9">
+        <p class="fact-vid embed-responsive embed-responsive-16by9" ng-show="fact.video != null">
             <iframe class="embed-responsive-item" src="{{ fact.video }}"></iframe>
         </p>
     </div>
     <div ng-hide="fexist" class="col-md-8 col-md-offset-2 fact-404">
-        <p>Deo co FACT</p>
+        <p class="text-center"><img src="https://i.imgur.com/CPKdCJ4.png"></img></p>
     </div>
 </div>

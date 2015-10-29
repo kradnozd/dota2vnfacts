@@ -1,1 +1,31 @@
-<a href="/#/f/random" type="button" class="btn btn-primary btn-lg btn-block">I'm feeling lucky!</a>
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <form>
+            <div class="form-group">
+            <a href="#f/random" type="button" class="btn btn-warning btn-lg btn-block">I'm feeling lucky!</a>
+            </div>
+        </form>
+    </div>
+    <div class="table-responsive col-md-8 col-md-offset-2">
+        <form>
+            <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search fact" ng-model="query">
+            </div>
+        </form>
+        
+        <table class="table table-striped table-hover">
+            <tr>
+                <th>ID</th>
+                <th>Fact</th>
+                <th>Tags</th>
+                <th></th>
+            </tr>
+            <tr ng-repeat="fact in facts | filter: query | orderBy:random">
+                <th>{{ fact.id }}</th>
+                <td><p class="fact-sum">{{ fact.text }}</p></td>
+                <td class="fact-tag"><span ng-repeat="tag in fact.tags">{{ tag }} </span></td>
+                <td class="fact-readmore"><a class="btn btn-success" href="#f/{{ fact.id }}" target="_blank">Read</a></td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,6 +1,7 @@
 /* Colors */
 $main-color: #f2992e;
 $main-color-darker: darken($main-color, 35);
+$main-color-trans: rgba(242,153,46,0.2);
 $bg-color: #151515;
 $white: #ffffff;
 $black: #000000;
@@ -13,7 +14,7 @@ $serif-family: Georgia, Times, serif;
 
 /* Global */
 body {
-    background: url(../../images/background_stone.jpg) center 0 repeat-y $bg-color;
+    background: url(https://i.imgur.com/BaHK89s.jpg) center 0 repeat-y $bg-color;
     color: $text-color;
 }
 
@@ -22,7 +23,7 @@ body {
     background-color: $black-transparent !important;
 }
 .navbar-brand {
-    background: url(../../images/facts_logo.png) 20px 50% no-repeat transparent;
+    background: url(https://i.imgur.com/aVnSEC4.png) 20px 50% no-repeat transparent;
     background-size: 120px;
     text-indent: -9999px;
     width: 150px;
@@ -39,6 +40,9 @@ body {
     background-color: $black !important;
     color: $main-color !important;
 }
+.fb-like {
+    margin: 15px;
+}
 
 /* Contents */
 .fact-title {
@@ -52,7 +56,7 @@ body {
     font-size: 250%;
 }
 .fact-text:before, .fact-text:after {
-    font-size: 500%;
+    font-size: 300%;
     position: absolute;
     line-height: 1;
     color: $main-color;
@@ -77,7 +81,33 @@ body {
     margin-bottom: 20px;
     text-align: right;
 }
+.fact-note {
+    background-color: $main-color-trans;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    color: #ccc;
+}
 
 .fact-images img {
     max-width: 100%;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,0.3) !important;
+}
+.table-hover>tbody>tr:hover {
+    background-color: rgba(0,0,0,0.3) !important;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border-color: #111 !important;
+}
+.fact-readmore {
+    vertical-align: middle !important;
+}
+.fact-tag {
+    text-transform: capitalize;
+}
+
+.credit {
+    margin-top: 5rem;
 }
