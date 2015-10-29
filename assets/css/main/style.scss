@@ -46,14 +46,19 @@ body {
 
 /* Contents */
 .fact-title {
-    font-size: 150%;
     margin: 5rem 0;
     color: $main-color;
+}
+.fact-title h1 {
+    font-size: 150%;
+    color: $main-color;
+    margin: 0 0 10px !important;
 }
 
 .fact-text {
     font-family: $serif-family;
     font-size: 250%;
+    margin-bottom: 100px !important;
 }
 .fact-text:before, .fact-text:after {
     font-size: 300%;
@@ -109,5 +114,5 @@ body {
 }
 
 .credit {
-    margin-top: 5rem;
+    margin-top: 8rem;
 }

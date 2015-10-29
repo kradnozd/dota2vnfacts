@@ -9,7 +9,10 @@
     <div class="table-responsive col-md-8 col-md-offset-2">
         <form>
             <div class="form-group">
+            <div class="input-group">
+            <div class="input-group-addon"><i class="fa fa-search"></i></div>
             <input type="text" class="form-control" placeholder="Search fact" ng-model="query">
+            </div>
             </div>
         </form>
         
@@ -20,7 +23,7 @@
                 <th>Tags</th>
                 <th></th>
             </tr>
-            <tr ng-repeat="fact in facts | filter: query | orderBy:random">
+            <tr ng-repeat="fact in facts | filter: query | orderBy: randomSort">
                 <th>{{ fact.id }}</th>
                 <td><p class="fact-sum">{{ fact.text }}</p></td>
                 <td class="fact-tag"><span ng-repeat="tag in fact.tags">{{ tag }} </span></td>

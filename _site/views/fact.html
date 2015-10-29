@@ -1,6 +1,14 @@
 <div class="row">
     <div ng-show="fexist" class="col-md-8 col-md-offset-2 fact-content">
-        <h1 class="fact-title">Fact #{{ fact.id }}</h1>
+        <div class="clearfix fact-title">
+        <h1 class="pull-left">Fact #{{ fact.id }}</h1>
+        <p class="fact-share pull-right">
+            <span class='st_facebook'></span>
+            <span class='st_twitter'></span>
+            <span class='st_googleplus'></span>
+            <span class='st_email'></span>
+        </p>
+        </div>
         <p class="fact-text">{{ fact.text }}</p>
         <footer class="fact-src" ng-show="fact.source != null">{{ fact.source }}</footer>
         <div class="fact-note" ng-show="fact.note != null">

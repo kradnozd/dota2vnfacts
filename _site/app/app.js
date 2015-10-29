@@ -29,6 +29,9 @@ factApp.controller('HomeFact', function($scope, LoadFact) {
     LoadFact.GetData().success(function(data) {
       $scope.facts = data.facts;
     });
+    $scope.randomSort = function(fact) {
+      return Math.random();
+    };
 });
 
 factApp.controller('GetFact', function($scope, $routeParams, $window, LoadFact) {

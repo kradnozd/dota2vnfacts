@@ -1,18 +1,70 @@
 {
     "facts": [
         {
-            "id": 4624,
-            "text": "Đối phương trên đường bay của Clockwerk khi Hookshot sẽ bị nhận damage và stun.",
-            "images": ["http://38.media.tumblr.com/99865b8f7d2012e3a5a62d9a517146a2/tumblr_nwthrscc2v1uk6e3oo1_1280.gif"],
-            "note": "Khong biet co that hay khong",
-            "source": "Deo cos",
-            "tags": ["clockwerk", "hookshot"]
+            "id": 1,
+            "text": "Faceless Void luôn luôn di chuyển được trong Chronosphere, chính vì vậy việc Rubick ăn cắp Chronosphere để chụp Faceless Void là hoàn toàn vô dụng",
+            "images": ["https://d3psvddqt9zx7g.cloudfront.net/blog/wp-content/uploads/2015/07/KP-81.gif"],
+            "tags": ["faceless void"]
         },
         {
-            "id": 2345,
-            "text": "Thôi nín đi em lệ đẫm vai rồi, buồn thương nhớ ơi Anh hỡi đôi mình mộng nay đã tan, tình đã dở dang Em khóc những chiều anh xót xa nhiều thương cho tình yêu Nỗi buồn chua cay khi lòng đổi thay thôi hết sum vầy",
-            "images": [],
+            "id": 2,
+            "text": "Hookshot của Clockwerk gây damage và stun cả đối phương trên đường bay tới mục tiêu",
+            "images": ["https://d3psvddqt9zx7g.cloudfront.net/blog/wp-content/uploads/2015/07/KP-5.gif"],
             "tags": ["clockwerk"]
+        },
+        {
+            "id": 3,
+            "text": "Khi Lifestealer nuốt Leshrac đang sử dụng Pulse Nova hay Naga Siren đang sử dụng Song of the Siren, các skill trên vẫn tiếp tục có tác dụng quanh Lifestealer mà không bị cancel",
+            "images": ["https://d3psvddqt9zx7g.cloudfront.net/blog/wp-content/uploads/2015/07/KP-4.gif"],
+            "tags": ["lifestealer"]
+        },
+        {
+            "id": 4,
+            "text": "Tinker không Rearm được Arcane Boots nhưng lại rearm được Guardian Greaves",
+            "images": ["https://d3psvddqt9zx7g.cloudfront.net/blog/wp-content/uploads/2015/07/KP-3.gif"],
+            "tags": ["tinker"]
+        },
+        {
+            "id": 5,
+            "text": "Mỗi Helm of the Dominator có thể thu phục được 1 creep, mua càng nhiều HotD càng thu phục được nhiều creep!",
+            "images": ["https://d3psvddqt9zx7g.cloudfront.net/blog/wp-content/uploads/2015/07/KP-2.gif"],
+            "tags": ["hod"]
+        },
+        {
+            "id": 6,
+            "text": "Theo lore của DotA, Antimage và Terrorblade là hai anh em, nhưng sang Dota 2 không còn như vậy nữa. Lúc đầu có thể Valve định giữ lại mối quan hệ này ở Dota 2 dựa vào những câu đối thoại đã bị xóa giữa Antimage và Terrorblade",
+            "images": ["https://img09.deviantart.net/082a/i/2014/122/2/4/still_brothers_by_mael_likki-d7gsvlp.jpg"],
+            "tags": ["antimage", "terrorblade", "dotA"]
+        },
+        {
+            "id": 7,
+            "text": "Chiếc mũ bảo hộ của Clockwerk đã du nhập sang game Team Fortress 2 với tên gọi Clockwerk's Helm",
+            "images": ["https://wiki.teamfortress.com/w/images/2/2b/Engineer_Clockwerks_Helm.png"],
+            "tags": ["clockwerk"]
+        },
+        {
+            "id": 8,
+            "text": "Aghanim trong Aghanim's Scepter được đặt tên dựa theo nhân vật phản diện Agahnim trong The Legend of Zelda. Ngoài ra thì trong Dota 2, Rubick là con trai của Aghanim",
+            "images": ["https://orig14.deviantart.net/da49/f/2013/294/f/d/rubick_with_aghanim_s_scepter_by_betawho-d6r6hob.jpg"],
+            "tags": ["rubick"]
+        },
+        {
+            "id": 9,
+            "text": "Hầu hết tất cả các câu nói của Ember Spirit đều chỉ có đúng 4 từ, tương tự với độ dài của các câu thành ngữ",
+            "images": ["https://i.imgur.com/4rR8TvQ.jpg"],
+            "tags": ["ember spirit"]
+        },
+        {
+            "id": 10,
+            "text": "Ultimate skill của Juggernaut - Omnislash được lấy tên theo tuyệt chiêu của nhân vật Cloud trong Final Fantasy VII",
+            "images": ["https://rpgsquare.files.wordpress.com/2013/07/final-fantasy-vii-cloud-omnislash.jpg"],
+            "tags": ["juggernaut"]
+        },
+        {
+            "id": 11,
+            "text": "Tinker, Clockwerk, Sniper không chỉ cùng thuộc chủng tộc Keen Folk mà cả 3 còn là anh em họ hàng với nhau",
+            "images": ["http://i.imgur.com/0qE9bPv.jpg"],
+            "tags": ["tinker", "sniper", "clockwerk"]
         }
     ]
 }

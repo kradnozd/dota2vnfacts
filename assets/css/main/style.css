@@ -33,13 +33,18 @@ body {
 
 /* Contents */
 .fact-title {
-  font-size: 150%;
   margin: 5rem 0;
   color: #f2992e; }
 
+.fact-title h1 {
+  font-size: 150%;
+  color: #f2992e;
+  margin: 0 0 10px !important; }
+
 .fact-text {
   font-family: Georgia, Times, serif;
-  font-size: 250%; }
+  font-size: 250%;
+  margin-bottom: 100px !important; }
 
 .fact-text:before, .fact-text:after {
   font-size: 300%;
@@ -91,6 +96,6 @@ body {
   text-transform: capitalize; }
 
 .credit {
-  margin-top: 5rem; }
+  margin-top: 8rem; }
 
 /*# sourceMappingURL=style.css.map */
